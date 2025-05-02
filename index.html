@@ -9,21 +9,34 @@
 <body>
   <header class="hero">
     <h1>🚀 Brokerly AI</h1>
-    <p>The AI marketing lab built for brokers. Generate headlines, content, and creative — instantly.</p>
-    <input type="email" placeholder="Enter your email to stay updated" />
-    <button onclick="alert('Subscribed!')">Notify Me</button>
+    <p>Generate ad content, AI images, and voiceovers in seconds.</p>
   </header>
 
   <section class="tool">
-    <h2>🧠 Caption + Script Generator</h2>
-    <textarea id="input" placeholder="Type your product, idea, or hook..."></textarea>
-    <button onclick="generate()">Generate</button>
-    <div id="output"></div>
+    <h2>💬 Caption Generator</h2>
+    <textarea id="text-input" placeholder="Enter your offer, hook, or idea..."></textarea>
+    <button onclick="generateText()">Generate</button>
+    <div id="text-output" class="output"></div>
+  </section>
+
+  <section class="tool">
+    <h2>🖼 Image Prompt</h2>
+    <input id="image-prompt" placeholder="Describe the image you want..." />
+    <button onclick="generateImage()">Generate Image</button>
+    <div id="image-output" class="output"><em>(image will render here)</em></div>
+  </section>
+
+  <section class="tool">
+    <h2>🎙 Voiceover Line</h2>
+    <textarea id="voice-input" placeholder="Enter voiceover script..."></textarea>
+    <button onclick="generateVoice()">Generate Voice</button>
+    <div id="voice-output" class="output"><em>(audio will play here)</em></div>
   </section>
 
   <footer>
-    <p>© 2025 Brokerly AI — All rights reserved.</p>
+    <p>© 2025 Brokerly AI — Built for brokers by builders.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
