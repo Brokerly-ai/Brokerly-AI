@@ -13,39 +13,38 @@
   </nav>
 
   <header class="hero">
-    <h1>Build Winning Ad Content in Seconds</h1>
-    <p>Generate AI-powered captions, images, scripts, and voiceovers—without a team.</p>
-    <button class="cta">Try Brokerly Free</button>
+    <h1>Generate High-Converting Ad Content in Seconds</h1>
+    <p>Captions. Scripts. Images. Voiceovers. All AI. All yours.</p>
+    <button class="cta">Start Creating</button>
   </header>
 
-  <section class="features">
-    <div class="feature">
-      <h3>💬 Instant AI Copy</h3>
-      <p>Type in your offer or product—we’ll generate ad-ready captions instantly.</p>
+  <section class="tools">
+    <div class="tool">
+      <h2>🧠 Caption Generator</h2>
+      <textarea id="caption-input" placeholder="Type your product or hook..."></textarea>
+      <button onclick="generateCaption()">Generate Caption</button>
+      <div id="caption-output" class="output"></div>
     </div>
-    <div class="feature">
-      <h3>🧠 Proven Frameworks</h3>
-      <p>We use top-performing ad formats that convert. No fluff, no filler.</p>
-    </div>
-    <div class="feature">
-      <h3>⚡ One-Click Export</h3>
-      <p>Download or deploy your creative as a polished ad pack, instantly.</p>
-    </div>
-  </section>
 
-  <section class="proof">
-    <h2>Stop Writing Ads from Scratch</h2>
-    <p>Brokerly replaces your copywriter, your designer, and your creative block.</p>
-    <img src="https://via.placeholder.com/800x400?text=Visual+Demo" />
-  </section>
+    <div class="tool">
+      <h2>🖼 Image Prompt Preview</h2>
+      <input id="image-input" placeholder="Describe the image you want..." />
+      <button onclick="generateImage()">Preview Image</button>
+      <div id="image-output" class="output"></div>
+    </div>
 
-  <section class="cta-section">
-    <h2>Generate Your First AI Ad Now</h2>
-    <button class="cta">Start Free</button>
+    <div class="tool">
+      <h2>🎙 Voiceover Preview</h2>
+      <textarea id="voice-input" placeholder="Paste your script here..."></textarea>
+      <button onclick="generateVoice()">Play Voiceover</button>
+      <div id="voice-output" class="output"></div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Brokerly AI. All rights reserved.</p>
+    <p>© 2025 Brokerly AI. Built for brokers by builders.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

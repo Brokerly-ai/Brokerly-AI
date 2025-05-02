@@ -1,18 +1,17 @@
 
-function generateText() {
-  const input = document.getElementById("text-input").value;
-  const out = document.getElementById("text-output");
-  out.innerText = "🧠 “This is your AI-generated caption based on: " + input + "”";
+function generateCaption() {
+  const input = document.getElementById("caption-input").value;
+  const output = document.getElementById("caption-output");
+  output.innerText = `“Unlock your potential with Brokerly AI.”\n\n(Generated from: "${input}")`;
 }
 
 function generateImage() {
-  const prompt = document.getElementById("image-prompt").value;
-  const imgBox = document.getElementById("image-output");
-  imgBox.innerHTML = '<img src="https://via.placeholder.com/500x300?text=' + encodeURIComponent(prompt) + '" width="100%" />';
+  const prompt = document.getElementById("image-input").value;
+  const output = document.getElementById("image-output");
+  output.innerHTML = '<img src="https://via.placeholder.com/600x300?text=' + encodeURIComponent(prompt) + '" width="100%" />';
 }
 
 function generateVoice() {
-  const text = document.getElementById("voice-input").value;
-  const voiceBox = document.getElementById("voice-output");
-  voiceBox.innerHTML = '<audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>';
+  const output = document.getElementById("voice-output");
+  output.innerHTML = '<audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>';
 }
